@@ -1,0 +1,10 @@
+   22  mv aws awscliv2.zip ..
+   23  ls
+   24  terraform init
+   25  ls
+   26  ls -la
+   27  ls
+   28  terraform validate
+   29  terraform plan
+   30  terraform apply
+   31  history
