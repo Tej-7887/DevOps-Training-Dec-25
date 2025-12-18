@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+
+  transaction-svc:
+    build: . 
+    image: transaction-svc:v1.1.0
+    container_name: transaction-svc
+    ports:
+      - '3000:3000'
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/transactionhistory
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - '27017:27017'

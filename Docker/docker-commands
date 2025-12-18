@@ -22,3 +22,41 @@
    37  rm index.html
    38  ls
    39  history
+
+
+# ==================================
+
+   31  vi docker-compose.yml
+   32  ls
+   33  cat docker-compose.yml
+   34  ls
+   35  docker compose --version
+   36  docker-compose --version
+   37  curl -SL https://github.com/docker/compose/releases/download/v5.0.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+   38  chmod +x /usr/local/bin/docker-compose
+   39  docker-compose --version
+   40  ls
+   41  docker-compose up -d
+   42  docker images
+   43  docker ps
+   44  vi docker-compose.yml
+   45  docker-compose up -d
+   46  docker ps
+   47  docker exec -it mongodb -- mongosh
+   48  docker exec -it mongodb --mongosh
+   49  docker exec -it mongodb mongosh
+   50  ls
+   51  history
+
+
+# mognodb commands  must be run inside the mongodb container
+
+docker exec -it mongodb mongosh
+
+show dbs
+
+use transactionhistory
+
+show collections
+
+db.transactions.find().pretty()
