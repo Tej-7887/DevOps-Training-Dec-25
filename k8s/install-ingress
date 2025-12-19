@@ -1,0 +1,50 @@
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.1/deploy/static/provider/cloud/deploy.yaml
+
+
+
+
+kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.1/deploy/static/provider/cloud/deploy.yaml
+
+# ingress commands
+
+  13  ls
+   14  vi deployment.yaml
+   15  ls
+   16  cat deployment.yaml
+   17  kubectl create ns murali-ns
+   18  ls
+   19  kubectl apply -f deployment.yaml
+   20  kubectl get all -n murali-ns
+   21  vi svc.yaml
+   22  kubectl apply -f svc.yaml
+   23  kubectl get all -n murali-ns
+   24  ls
+   25  kubectl get nodes -o wide
+   26  vi svc.yaml
+   27  ls
+   28  cat svc.yaml
+   29  kubectl apply -f svc.yaml
+   30  kubectl get all -n murali-ns
+   31  kubectl get node -o wide
+   32  ls
+   33  vi svc.yaml
+   34  ls
+   35  kubectl apply -f svc.yaml
+   36  kubectl get all -n murali-ns
+   37  kubectl get ingress -A
+   38  kubectl get pods -A
+   39  kubectl get deployment -A
+   40  kubectl get svc -A
+   41  vi svc.yaml
+   42  kubectl apply -f svc.yaml
+   43  kubectl get svc -A
+   44  vi ingress.yaml
+   45  ls
+   46  cat ingress.yaml
+   47  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.1/deploy/static/provider/cloud/deploy.yaml
+   48  kubectl get ns
+   49  kubectl get all -n ingress-nginx
+   50  ls
+   51  kubectl apply -f ingress.yaml
+   52  kubectl get ingress -n murali-ns
+   53  history
