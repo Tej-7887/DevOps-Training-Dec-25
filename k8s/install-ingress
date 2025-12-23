@@ -6,8 +6,6 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.1/deploy/static/provider/cloud/deploy.yaml
 
 # ingress commands
-
-  13  ls
    14  vi deployment.yaml
    15  ls
    16  cat deployment.yaml
